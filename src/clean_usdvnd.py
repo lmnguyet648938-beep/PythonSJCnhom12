@@ -57,7 +57,7 @@ def clean_usdvnd(filepath: str) -> pd.DataFrame:
 
 # --- KHỐI KIỂM THỬ ĐỘC LẬP CHO THÀNH VIÊN 2 --- 
 if __name__ == "__main__": 
-    src_file = sys.argv[9] if len(sys.argv) > 1 else "data/raw/usdvnd_raw.csv" 
+    src_file = sys.argv[1] if len(sys.argv) > 1 else "data/raw/usdvnd_raw.csv" 
     print("⏳ Đang làm sạch dữ liệu USD/VND...") 
     df_usd = clean_usdvnd(src_file) 
     print("\n====== BÁO CÁO KIỂM THỬ USD/VND (THÀNH VIÊN 2) ======") 
